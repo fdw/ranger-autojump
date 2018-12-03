@@ -7,7 +7,7 @@ HOOK_INIT_OLD = ranger.api.hook_init
 
 def hook_init(fm):
     def update_autojump(signal):
-        subprocess.call(["autojump", "--add", signal.new.dirname])
+        subprocess.call(["autojump", "--add", signal.new.path])
 
     fm.signal_bind('cd', update_autojump)
     HOOK_INIT_OLD(fm)
