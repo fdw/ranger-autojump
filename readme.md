@@ -6,6 +6,9 @@ Using `:j` you can use autojump to jump to a directory. This is made even better
 
 As an added bonus, there is a zsh plugin introducing a new function called `r`. Without arguments, it just opens ranger. If you supply an argument that is a directory, ranger is opened in that directory. But if you supply anything else as an argument, `autojump` is called with the argument and `ranger` is opened there 🧙
 
+# Maintenance Mode
+As autojump seems to be unmaintained and there's not really any features missing, this repo exists as-is. I will still look at PRs and issues, but don't expect too much.
+
 ## Installation
 ### Ranger plugin
 Copy `autojump.py` to `${XDG_CONFIG_HOME}/ranger/plugins`.
