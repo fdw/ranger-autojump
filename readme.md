@@ -9,6 +9,8 @@ As an added bonus, there is a zsh plugin introducing a new function called `r`. 
 # Maintenance Mode
 As autojump seems to be unmaintained and there's not really any features missing, this repo exists as-is. I will still look at PRs and issues, but don't expect too much.
 
+If you want similar functionality for [zoxide](https://github.com/ajeetdsouza/zoxide), you can try [ranger-zoxide](https://github.com/fdw/ranger-zoxide).
+
 ## Installation
 ### Ranger plugin
 Copy `autojump.py` to `${XDG_CONFIG_HOME}/ranger/plugins`.
