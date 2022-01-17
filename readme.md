@@ -8,6 +8,11 @@ As an added bonus, there is a zsh plugin introducing a new function called `r`. 
 
 If you want similar functionality for [zoxide](https://github.com/ajeetdsouza/zoxide), you can try [ranger-zoxide](https://github.com/fdw/ranger-zoxide).
 
+# Maintenance Mode
+As autojump seems to be unmaintained and there's not really any features missing, this repo exists as-is. I will still look at PRs and issues, but don't expect too much.
+
+If you want similar functionality for [zoxide](https://github.com/ajeetdsouza/zoxide), you can try [ranger-zoxide](https://github.com/fdw/ranger-zoxide).
+
 # Installation
 ### Ranger plugin
 - Copy `autojump.py` to `${XDG_CONFIG_HOME}/ranger/plugins`.
@@ -15,17 +20,17 @@ If you want similar functionality for [zoxide](https://github.com/ajeetdsouza/zo
 	```
 	map cj console j%space
 	```
-	
-
 
 ### vim plugin (optional extra)
 - To use autojump with vim, the [autojump.vim](https://github.com/trotter/autojump.vim) plugin can be installed. This can also be integrated with ZSH as shown below.
 
 ### zsh plugin
 - Install the zsh plugin using your favorite plugin manager, e.g.:
-	-	[zgen](https://github.com/tarjoilija/zgen): 
+	- [zgen](https://github.com/tarjoilija/zgen):
 		-	`zgen load fdw/ranger_autojump`
-	- [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh): 
+	- [antigen](https://github.com/zsh-users/antigen):
+		-	`antigen bundle fdw/ranger_autojump@main`
+	- [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh):
 		1. Clone this repository into oh-my-zsh's plugin directory:
 			```
 			git clone https://github.com/fdw/ranger-autojump ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/ranger-autojump
