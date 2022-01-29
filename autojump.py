@@ -1,8 +1,6 @@
-
 import ranger.api
 import subprocess
 from ranger.api.commands import *
-import os
 
 HOOK_INIT_OLD = ranger.api.hook_init
 
