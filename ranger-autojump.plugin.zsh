@@ -4,11 +4,20 @@ r() {
   if [ "$1" != "" ]; then
     if [ -d "$1" ]; then
       ranger "$1"
+    elif [ -f "$1" ]; then
+      ranger --selectfile="$1"
     else
-      ranger "$(autojump $1)"
+      out="$(autojump $1)"
+      if [ -d "$out" ]; then
+        ranger "$out"
+      else
+        ranger --selectfile="$out"
+      fi
     fi
   else
     ranger
   fi
 	return $?
 }
+
+
