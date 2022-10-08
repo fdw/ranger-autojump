@@ -26,8 +26,8 @@ If you want similar functionality for [zoxide](https://github.com/ajeetdsouza/zo
 
 ### zsh plugin
 - Install the zsh plugin using your favorite plugin manager, e.g.:
-	- [zgen](https://github.com/tarjoilija/zgen):
-		-	`zgen load fdw/ranger_autojump`
+	- [zgenom](https://github.com/jandamm/zgenom):
+		-	`zgenom load fdw/ranger_autojump`
 	- [antigen](https://github.com/zsh-users/antigen):
 		-	`antigen bundle fdw/ranger_autojump@main`
 	- [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh):
